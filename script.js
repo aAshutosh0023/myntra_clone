@@ -49,6 +49,15 @@ function showSlides() {
         document.getElementById("end").innerHTML = "TIME UP!!";
     }
     }, 1000);
+
+    
+    // Prevent default drag behavior for images
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+      });
+    });
+  
   
 
 
